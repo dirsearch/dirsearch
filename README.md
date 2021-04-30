@@ -1,5 +1,12 @@
-dirsearch - Web path scanner
+
+
+![dirsearch](https://github.com/maurosoria/dirsearch) - Web path scanner
 =========
+
+Preventing malicious takeover of the dirsearch - 
+
+The tool you're looking for is somewhere else
+https://github.com/maurosoria/dirsearch
 
 ![Build](https://img.shields.io/badge/Built%20with-Python-Blue)
 ![License](https://img.shields.io/badge/license-GNU_General_Public_License-_red.svg)
