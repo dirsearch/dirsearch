@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+
+import sys
+sys.stdout.write("You could have been hacked! Don't blindly run code off Github just because someone you trust linked it to you.")
+
+
 # -*- coding: utf-8 -*-
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -18,29 +23,29 @@
 #  Author: Mauro Soria
 
 import os
-import sys
+#import sys
 
-if sys.version_info < (3, 0):
-    sys.stdout.write("Sorry, dirsearch requires Python 3.x\n")
-    sys.exit(1)
+#if sys.version_info < (3, 0):
+#    sys.stdout.write("Sorry, dirsearch requires Python 3.x\n")
+#    sys.exit(1)
 
-from lib.core import ArgumentParser
-from lib.controller import Controller
-from lib.output import CLIOutput, PrintOutput
+#from lib.core import ArgumentParser
+#from lib.controller import Controller
+#from lib.output import CLIOutput, PrintOutput
 
 
-class Program(object):
-    def __init__(self):
-        self.script_path = os.path.dirname(os.path.realpath(__file__))
+#class Program(object):
+#   def __init__(self):
+#        self.script_path = os.path.dirname(os.path.realpath(__file__))
 
-        self.arguments = ArgumentParser(self.script_path)
+#        self.arguments = ArgumentParser(self.script_path)
 
-        if self.arguments.quiet:
-            self.output = PrintOutput(self.arguments.color)
-        else:
-            self.output = CLIOutput(self.arguments.color)
+#        if self.arguments.quiet:
+#            self.output = PrintOutput(self.arguments.color)
+#        else:
+#            self.output = CLIOutput(self.arguments.color)
 
-        self.controller = Controller(self.script_path, self.arguments, self.output)
+#        self.controller = Controller(self.script_path, self.arguments, self.output)
 
 
 if __name__ == "__main__":
